@@ -1,24 +1,56 @@
 <!doctype html>
 <html>
 <head>
-<title>지수진서 홈페이지</title>
-<meta charset="utf-8">
-<!--
-CSS 지정하기 위해 style tag 사용
--->
-<style>
-	a {
-		color:red;
-	}
-</style>
+    <title>순민이네</title>
+    <meta charset="utf-8">
+    <style>
+		body {
+			margin: 0;
+		}
+        #active {
+            color : red;
+        }
+        .saw {
+            color : gray;
+        }
+        a {
+            color : black;
+            text-decoration: none;
+        }
+        h1{
+        /*   
+            border-width: 5px;
+            border-color: red;
+            border-style: solid;
+        */
+        /*
+            border: 5px red solid;
+        */
+            font-size: 45px;
+            text-align: center;
+			border-bottom: 1px solid gray;
+			margin: 0;
+			padding:20px;
+        }
+		ol {
+			border-right: 1px solid gray;
+			width: 100px;
+			margin: 0;
+			padding: 20px;
+		}
+    </style>
 </head>
 <body>
-<h1><a href="family.html">가족</h1>
+<h1><a href="index.html">순민이네</a></h1>
+<p>
+	순민이네는 용인시 수지구에 위치해 있어요. 귀염둥이 아들과 딸과 함께 네식구가 살고 있지요.
+</p>
+<h2>순민이네 구성원은 아래와 같아요.</h2>
 <ol>
-	<li><a href="sunmin.html">순민</li>
-	<li><a href="eunhee.html">은희</li>
-	<li><a href="jisoo.html">지수</li>
-	<li><a href="jinseo.html">진서</li>
+	<li><a href="sunmin.html" class="saw">순민</a></li>
+	<li><a href="eunhee.html" class="saw" id="active">은희</a></li>
+	<li><a href="jisoo.html">지수</a></li>
+	<li><a href="jinseo.html">진서</a></li>
 </ol>
 </body>
 </html>
